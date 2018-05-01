@@ -1,0 +1,99 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+body {
+  background: #333;
+}
+
+.rotate-right {
+  transform: rotate(30deg) scale(0.6) translateX(300px) translateY(60px);
+  transition: 1s;
+  margin-left: 400px;
+  cursor: e-resize;
+  opacity: 0;
+  z-index: 10;
+}
+
+.rotate-left {
+  transform: rotate(-30deg) scale(0.6) translateX(-300px) translateY(60px);
+  transition: 1s;
+  opacity: 0;
+  margin-left: -400px;
+  cursor: w-resize;
+  z-index: 10;
+}
+
+.characterImage {
+  width: 90vw;
+  min-height: 380px;
+  margin: 43px auto 0 auto;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 2px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.characterImage img {
+  width: 100vw;
+}
+
+
+.iconList {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.iconList li .material-icons {
+  font-size: 64px;
+}
+
+.iconList li {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  height: 104px;
+  background: #fff;
+}
+
+.iconList .iconList--like {
+  color: #C44F52;
+}
+
+.iconList .iconList--dislike {
+  color: #ccc;
+}
